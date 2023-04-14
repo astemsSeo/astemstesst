@@ -29,37 +29,37 @@ export class AstemstestComponent implements OnInit {
   // @ts-ignore
   dataTest = [{
     tenant: 1000,
-    rcvKey: '1',
+    rcvKey: 'WRV20230331000003',
     uid: 1,
-    fromRcvSchDate: '20/10/2022',
-    toRcvSchDate: '20/10/2022',
-    fromReceiveDate: '20/10/2022',
-    toReceiveDate: '20/10/2022',
-    sts: '취소 된',
-    rcvTypecd: '유형 2',
+    fromRcvSchDate: '2023-03-31',
+    toRcvSchDate: '2023-03-31',
+    fromReceiveDate: '2023-03-31',
+    toReceiveDate: '2023-03-31',
+    sts: '예정-(200)',
+    rcvTypecd: '원자재입고-(STD)',
     supplierId: '공급처3',
     warehouseId: '창고 A',
     ownerId: '화주 C',
     acceptKey: 2,
-    rcvSchDate: '2/10/2022',
-    receiveDate: '2/10/2022',
+    rcvSchDate: '2023-03-31',
+    receiveDate: '2023-03-31',
     rcvSumItemCount: 222000,
     rcvSumQty1: 222000,
     actFlag: 1,
     remarks: 'ABC123',
     createdBy: 'Buu',
-    createdDatetime: '13/4/2023',
+    createdDatetime: '2023-03-31',
     modifiedBy: 'Buu',
-    modifiedDatetime: '13/4/2023',
+    modifiedDatetime: '2023-03-31',
   },
     {
       tenant: 1000,
-      rcvKey: '2',
+      rcvKey: 'WRV20230331000004',
       uid: 2,
-      fromRcvSchDate: '20/10/2022',
-      toRcvSchDate: '20/10/2022',
-      fromReceiveDate: '20/10/2022',
-      toReceiveDate: '20/10/2022',
+      fromRcvSchDate: '2023-04-03',
+      toRcvSchDate: '2023-04-03',
+      fromReceiveDate: '2023-04-03',
+      toReceiveDate: '2023-04-03',
       sts: '취소 된',
       rcvTypecd: '유형 2',
       supplierId: '공급처1',
@@ -73,9 +73,9 @@ export class AstemstestComponent implements OnInit {
       actFlag: 1,
       remarks: 'ABC123',
       createdBy: 'Buu',
-      createdDatetime: '13/4/2023',
+      createdDatetime: '2023-04-03',
       modifiedBy: 'Buu',
-      modifiedDatetime: '13/4/2023',
+      modifiedDatetime: '2023-04-03',
     }
   ];
 
@@ -187,7 +187,9 @@ export class AstemstestComponent implements OnInit {
       this.dsUser = result.data;
     });
   }
-
+  
+  async onPopupAfterOpen(): Promise<void> { }
+  async onPopupAfterClose(): Promise<void> { }
   ngOnInit(): void {
     this.mainEntityStore = new ArrayStore(
       {

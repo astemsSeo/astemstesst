@@ -283,6 +283,7 @@
             [dragEnabled]="true"
             [resizeEnabled]="true"
             [width]="1140"
+            (onShown)="onPopupAfterOpen()" (onHidden)="onPopupAfterClose()"
   
   >
     <dxi-toolbar-item [options]="{
